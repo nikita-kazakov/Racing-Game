@@ -206,7 +206,10 @@ puts "\n\n\n\n*****************"
 #YEAHHHHH BUDDY!!  The name FORD appears!  We called the "name" method and it returned @name instance variable back.
 #Remember, we couldn't access this instance variable outside of Class...but now we could by passing it THROUGH a
 #method.
-#
+
+#Make site today. Setup syntax highlighting.
+
+
 #
 #
 #See misusing ruby attribute readers and writers:
