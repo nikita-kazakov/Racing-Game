@@ -426,7 +426,8 @@ puts firstCar.nameGet
 
 ######Write about how attr_reader and attr_writer creates these methods for you.
 ###write about how to use self. or should you reference @name.
-
+##Write about the option of referencing the self.name = true or just doing @name = true...about how if you
+#do it within the class, it's much easier to read if you do @name = true
 
 
 
