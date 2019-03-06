@@ -207,7 +207,245 @@ puts "\n\n\n\n*****************"
 #Remember, we couldn't access this instance variable outside of Class...but now we could by passing it THROUGH a
 #method.
 
-#Make site today. Setup syntax highlighting.
+#What we just did is an important concept when it comes to dealing with classes.  Classes encapsulate variables so you
+#can't directly access them from the main program.  To access them you will need to write methods.  You can think of
+#methods as ambassadors.  Classes are like a locked castle.  Methods are ambassadors setup to communicate with the
+#outside world.
+#
+#What we wrote above is known as a getter method.  It's job is to 'get' some value.  In our example, we got
+#the name of the car: firstCar.nameGet.
+
+#let's create a few more cars:
+
+secondCar = Car.new("Toyota")
+thirdCar = Car.new("Honda")
+
+puts secondCar.nameGet
+puts thirdCar.nameGet
+
+#All three cars gave you their individual names because they are all INDIVIDUAL objects that you created from the
+#Car class.
+
+#What if we wanted to change the name of one of those cars?  How would we do that?
+#Here's where I used to mess it up.  I'd try to do something like:
+#
+firstCar = Car.new("Ford")
+#puts firstCar.nameGet = "BMW"
+
+#That gives an error "undefined method `nameGet=' for #<Car"
+#It's because the job of the getter method is just to return @name.  It doesn't have any way to take parameters.
+#You're passing the parameter "BMW" but it can't take it.
+#Ruby is smart though, in the error message, it gives you a hint saying "nameGET=" doesn't exist.
+#It's looking for a setter method that ends with "=" that doesn't exist yet.  Let's create it.  You can
+#name is ANYTHING you want, but for this example, I'll name it "nameSet=""
+
+
+#Remember that instance variables are all encapsulated within the Car class (a castle).  And we need an ambassador
+#(method) to pass a new name value to the object.  This method is called a SETTER method.
+
+class Car
+
+  def initialize(whatevernameyouwant)
+    @name = whatevernameyouwant
+  end
+
+
+  def nameGet
+    @name
+  end
+
+  #Creating a setter method
+
+  def nameSet=(changedName)
+    @name = changedName
+  end
+
+end
+
+#We give the nameSET= method a parameter called changedname.  Why?
+#When we try to change the name by running
+
+firstCar = Car.new("Ford")
+puts firstCar.nameSet=("BMW")
+
+#that BMW string will be passed to "changedName".  Inside the method, the @name instance variable will
+#reference our new passed string!  Let's try it:
+
+puts firstCar.nameSet=("BMW")
+puts firstCar.nameGet
+
+#In Ruby, both of these below do the same thing.  The first line is clearer because you're passing
+# "BMW" parameter to the method called nameSET=.  The second line is prettier and easier to read.
+#
+puts firstCar.nameSet=("BMW")
+#is the same as:
+puts firstCar.nameSet = "BMW"
+
+#Let's practice.  What if you wanted to give this car a color property?  You're going to need a color
+#instance variable, right?  Everytime I create a car, I want to give it a name and a color.
+#I need 2 parameters in my initialize method within the car class.
+
+class Car
+
+  def initialize(whatevernameyouwant, color)
+    @name = whatevernameyouwant
+    @color = color
+  end
+
+  #hidden getter and setter code for name.
+end
+
+#We can now create a car object by passing in the name and the color.  In the initialize method, @color will get
+#assigned the color argument that is passed through to the initialize method.
+
+firstCar = Car.new("Ford", "Black")
+puts firstCar.inspect
+
+#We can see in the output that the object Car has @name = "Ford" and @color = "black"
+#Let's go ahead and write getter and setter methods to retrieve the color from this car object and also
+#to set / modify the color of a car object.
+
+class Car
+
+  def initialize(whatevernameyouwant, color)
+    @name = whatevernameyouwant
+    @color = color
+  end
+
+  #Creating a color setter method
+  def colorGet
+    @color
+  end
+
+  #Creating a color setter method
+  def colorSet=(anycolor)
+    @color = anycolor
+  end
+
+  ##Creating a name getter method
+  def nameGet
+    @name
+  end
+
+  #Creating a name setter method
+  def nameSet=(changedName)
+    @name = changedName
+  end
+
+end
+
+
+
+#I'm able to get the firstCar color.
+#Let't change it and get the new color.
+
+#firstCar.colorSet = "Blue"
+puts firstCar.colorGet
+
+#Let's go ahead and show the entire code and create several car objects and change their properties:
+
+firstCar = Car.new("Ford", "Black")
+secondCar = Car.new("Honda", "Red")
+thirdCar = Car.new("Toyota", "Blue")
+
+puts firstCar.colorGet
+puts secondCar.colorGet
+puts thirdCar.colorGet
+
+firstCar.colorSet = "Orange"
+secondCar.colorSet = "Magento"
+thirdCar.colorSet = "Yellow"
+
+puts firstCar.colorGet
+puts secondCar.colorGet
+puts thirdCar.colorGet
+
+#All three car objects: firstCar, secondCar, and thirdCar were created from the Car class (factory).
+#All three car objects have the name and color property...but all have unique names and colors!  Each one is unique.
+
+##Instance variables that AREN'T used when an object is created.  How do we do that?
+#Henry Ford famously said you can have his cars in any color as long as it's black.  Black paint was the only
+#paint his Ford Model T came out of the factory with.
+
+#Let's say our car Class (factory) rolls out cars that are only initially black.  It would be too much repitition
+#to always assign them a color 'black' each time a car object is created.
+
+#This is too much repitition.  Color black is assigned everytime...
+firstCar = Car.new("Ford", "Black")
+secondCar = Car.new("Honda", "Black")
+thirdCar = Car.new("Toyota", "Black")
+
+
+# What can we do?  Let's take the color method out of our initialize method!
+# Let's still keep the @color instance variable, but we'll set it to a string value of "black".
+
+class Car
+
+  def initialize(whatevernameyouwant)
+    @name = whatevernameyouwant
+    @color = "black"
+  end
+
+end
+
+firstCar = Car.new("Ford")
+secondCar = Car.new("Honda")
+
+puts firstCar.colorGet
+puts secondCar.colorGet
+
+#You created two car objects. You didn't have to pass the color
+#argument when creating the class. They were both black.
+
+#Let's do the same thing for speed.  When we create these cars, their speed is going to be zero by default.
+
+#Since we're pushing cars out of the Car Class (Factory), we might not always want to name our cars. If we don't name
+#them, we want a default @name value to be used automatically.  We can do that by giving a default value to
+#@name parameter in the initialize method.
+
+class Car
+
+  def initialize(whatevernameyouwant="default_car_name")
+    @name = whatevernameyouwant
+    @color = "black"
+    @speed = 0
+  end
+end
+
+#Now you can create a new car and if you don't pass a car name as an argument, it will take the default
+firstCar = Car.new()
+puts firstCar.nameGet
+
+#You're flexible though, you can also pass a name argument and it will take your name and overwrite the default one:
+firstCar = Car.new("Ford")
+puts firstCar.nameGet
+
+#To solidify these concepts, go ahead and code YOUR OWN example.  Make a Computer Class (factory that generates
+# computers. Give these computers names, color, prices.  Write getters and setters to get the price and to set new
+# prices.)
+
+######Write about how attr_reader and attr_writer creates these methods for you.
+###write about how to use self. or should you reference @name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#A setter method is also special because the method itself is "nameSET="
+#It's an empty setter method right now.  In which instance variable is the car name stored?  It's stored in @name.
+#
+
+#Make site today. Setup syntax highlighting. (Comment for Nikita.)
 
 
 #
