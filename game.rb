@@ -11,11 +11,11 @@ class Game
     @cars = []
   end
 
-  def carsAdd(car)
+  def carAdd(car)
     @cars.push(car)
   end
 
-  def carsRemove(car)
+  def carRemove(car)
     @cars.pop(car)
   end
 
@@ -44,7 +44,11 @@ class Game
 
   end
 
+
+
 end
+
+if __FILE__  == $0
 
 player1 = Player.new("Jimmy")
 player2 = Player.new("Rico")
@@ -59,12 +63,14 @@ car4 = Car.new("Renault")
 gameNFS = Game.new("NFS")
 
 
-gameNFS.carsAdd(car1)
-gameNFS.carsAdd(car2)
-gameNFS.carsAdd(car3)
+gameNFS.carAdd(car1)
+gameNFS.carAdd(car2)
+gameNFS.carAdd(car3)
 
 gameNFS.playerAdd(player1)
 gameNFS.playerAdd(player2)
 gameNFS.playerAdd(player3)
 
 gameNFS.stats
+
+end
