@@ -2,7 +2,7 @@
 class Car
 
   attr_reader :name, :health, :color, :ignition, :speed
-  attr_writer :name, :ignition, :speed
+  attr_writer :name, :ignition, :speed, :health
 
   #I put down a default value of "NoName in-case you forget to pass name parameter"
   def initialize(name="NoName")

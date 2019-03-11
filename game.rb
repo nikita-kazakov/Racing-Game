@@ -1,5 +1,6 @@
 require_relative 'car'
 require_relative 'player'
+require_relative 'die'
 
 class Game
 
@@ -25,6 +26,23 @@ class Game
 
   def playerRemove(player)
     @player.pop(player)
+  end
+
+
+  def play
+
+    die = Die.new
+    dievalue = die.roll
+    puts "Start Game".center(70, "*")
+
+    puts "Everyone loses 10 health. Car # #{dievalue} gains +20 health."
+    @cars[dievalue - 1].health += 20
+
+    @cars.each do |car|
+      car.health -= 10
+      puts car.stats
+    end
+
   end
 
   def stats
@@ -72,5 +90,8 @@ gameNFS.playerAdd(player2)
 gameNFS.playerAdd(player3)
 
 gameNFS.stats
+
+gameNFS.play
+
 
 end

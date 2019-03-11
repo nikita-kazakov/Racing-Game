@@ -8,10 +8,11 @@ class Player
     @name = name
     @money = 10000
     @multiplier = 1
+    @cars = []
   end
 
   def stats
-    "Player: #{name}. Money: #{money}. Multiplier: #{multiplier}"
+    "Player: #{name}. Money: #{money}. Multiplier: #{multiplier}. Owns Cars: #{@cars.size}"
   end
 
 end
