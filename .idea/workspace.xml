@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93631842-2e8c-46ef-a4fc-72a4a3fadc5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/die.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game00.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pragmatic-Ruby-Game/.idea/Pragmatic-Ruby-Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Pragmatic-Ruby-Game/.idea/Pragmatic-Ruby-Game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Racing-Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Racing-Game.iml" afterDir="false" />
+    <list default="true" id="93631842-2e8c-46ef-a4fc-72a4a3fadc5f" name="Default Changelist" comment="Pragmatic Studio - Merged Dev into Master.">
+      <change afterPath="$PROJECT_DIR$/../Pragmatic-Ruby-Game/chris pines refresher/00 - misc.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car.rb" beforeDir="false" afterPath="$PROJECT_DIR$/car.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/game.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.rb" beforeDir="false" afterPath="$PROJECT_DIR$/player.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,33 +12,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Racing_Game@00___misc.rcov" NAME="00 - misc Coverage Results" MODIFIED="1552346441473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." MODULE_NAME="Pragmatic-Ruby-Game" />
     <SUITE FILE_PATH="coverage/Racing_Game@Die.rcov" NAME="Die Coverage Results" MODIFIED="1552341744300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." MODULE_NAME="Racing-Game" />
     <SUITE FILE_PATH="coverage/Racing_Game@game.rcov" NAME="game Coverage Results" MODIFIED="1552345562843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." MODULE_NAME="Racing-Game" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game.rb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/studio_game/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="648">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/chris pines refresher/00 - misc.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/die.rb">
+        <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-241">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/flicks.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie_spec.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Pragmatic-Ruby-Game" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../Pragmatic-Ruby-Game" value="Dev" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,6 +76,8 @@
         <option value="$PROJECT_DIR$/car.rb" />
         <option value="$PROJECT_DIR$/die.rb" />
         <option value="$PROJECT_DIR$/game.rb" />
+        <option value="$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie.rb" />
+        <option value="$PROJECT_DIR$/../Pragmatic-Ruby-Game/chris pines refresher/00 - misc.rb" />
       </list>
     </option>
   </component>
@@ -83,6 +104,11 @@
             <path>
               <item name="Racing-Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pragmatic-Ruby-Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Racing-Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pragmatic-Ruby-Game" type="462c0819:PsiDirectoryNode" />
+              <item name="chris pines refresher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Racing-Game" type="b2602c69:ProjectViewProjectNode" />
@@ -120,7 +146,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.game">
+  <component name="RunManager" selected="Ruby.00 - misc">
+    <configuration name="00 - misc" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Pragmatic-Ruby-Game" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/.." />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="asdf: 2.4.4" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/chris pines refresher/00 - misc.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Racing-Game" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -177,6 +221,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.00 - misc" />
+        <item itemvalue="Ruby.game" />
+        <item itemvalue="Ruby.die" />
         <item itemvalue="Ruby.game" />
         <item itemvalue="Ruby.die" />
       </list>
@@ -195,12 +242,27 @@
       <updated>1552336793857</updated>
       <workItem from="1552336795164" duration="320000" />
       <workItem from="1552337301729" duration="259000" />
-      <workItem from="1552337727192" duration="6013000" />
+      <workItem from="1552337727192" duration="6960000" />
     </task>
+    <task id="LOCAL-00001" summary="Car racing play method.  Conditionals.">
+      <created>1552345599720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552345599720</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Pragmatic Studio - Merged Dev into Master.">
+      <created>1552345785391</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552345785391</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6592000" />
+    <option name="totallyTimeSpent" value="7539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="936" extended-state="6" />
@@ -229,17 +291,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New linux image (Xubuntu) setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="New linux image (Xubuntu) setup." />
+    <MESSAGE value="Car racing play method.  Conditionals." />
+    <MESSAGE value="Pragmatic Studio - Merged Dev into Master." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pragmatic Studio - Merged Dev into Master." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/flicks.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -295,6 +379,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1073">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie_spec.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/movie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/movieApp/flicks.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/studio_game/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/chris pines refresher/00 - misc.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
