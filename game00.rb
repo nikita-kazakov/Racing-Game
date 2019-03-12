@@ -1,6 +1,5 @@
 require_relative 'car'
 require_relative 'player'
-require_relative 'die'
 
 class Game
 
