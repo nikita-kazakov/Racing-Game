@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Pragmatic-Ruby-Game/.idea/Pragmatic-Ruby-Game.iml" filepath="$PROJECT_DIR$/../Pragmatic-Ruby-Game/.idea/Pragmatic-Ruby-Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Racing-Game.iml" filepath="$PROJECT_DIR$/.idea/Racing-Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ruby-designs/.idea/ruby-designs.iml" filepath="$PROJECT_DIR$/../ruby-designs/.idea/ruby-designs.iml" />
     </modules>
   </component>
 </project>
